@@ -42,9 +42,6 @@
     outline: none;
     margin: 0 1.5em 0 1.5em;
     transition: .2s all ease;
-    border-top: none;
-    border-left: none;
-    border-right: none;
 }
 
 .catItem{
@@ -53,7 +50,7 @@
 
 
 .catBtn:hover{
-    background-image: linear-gradient(to bottom, transparent , #555 30%);
+    background-color: #555;
     color: white;
 
 }
