@@ -70,13 +70,15 @@
 }
 
 
+/* movie line start */
+
 #movieLine{
     display: flex;
     position: relative;
     height: 15px;
     align-items: center;
     justify-content: center;
-    margin: 15px 0 0 10px;
+    margin: 17px 0 0 10px;
 }
 
 .movieLineFirst{
@@ -123,3 +125,27 @@
         height: 0;
     }
 }
+
+/* movie line end */
+
+/* pagination start */
+
+.page-item{
+    margin: 0 5px 0 5px;
+    
+}   
+
+.page-link{
+    border-radius: 8px;
+    color: #808080;
+}
+.page-link>span{
+    border-radius: 50%;
+}
+
+
+.page-link:hover{
+    background-color: #808080;
+    color: white;
+}
+/* pagination end */
