@@ -1,0 +1,83 @@
+*{
+    box-sizing: border-box;
+    font-family: "Kanit", "sans-serif";
+    justify-content: center;
+}
+
+body{
+    place-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.sign-in-section{
+    width: 40em;
+    height: 27em;
+    margin: auto;
+    border: 2px solid #555;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+}
+
+.SubmitBtn{
+    width: 38.5em;
+    border: 2px solid #808080;
+    color: #555;
+    background-color: white;
+}
+
+.SubmitBtn:hover{
+    color: white;
+    background-color: #808080;
+}
+
+@media(max-width: 767px){
+    .sign-in-section{
+        width: 20em;
+
+    }
+    .SubmitBtn{
+        width: 18.5em;
+    }
+}
+@media(max-width: 574px){
+    .sign-in-section{
+        width: 15em;
+        height: 28.5em;
+    }
+    .SubmitBtn{
+        width: 13.5em;
+    }
+}
+
+.form-group{
+    position: relative;
+}
+
+.form-control{ 
+    padding: 10px;
+    border: 2px solid #808080;
+    border-radius: 5px;
+    outline: none;
+}
+
+
+.form-group span{
+    padding: 8px;
+    position: absolute;
+    padding-left: 13px;
+    pointer-events: none;
+    font-size: 1em;
+    z-index: 1;
+    transition: 0.5s all ease;
+    text-transform: uppercase;
+}
+
+.form-control:valid ~span, 
+.form-control:focus~span{
+    color: #555;
+    transform: translateX(10px) translateY(-7px);
+}
