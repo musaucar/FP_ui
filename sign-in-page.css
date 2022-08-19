@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=PT+Serif:wght@400;700&family=Pacifico&family=Poppins:wght@200&family=Radio+Canada:wght@300;500&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200&family=PT+Serif:wght@400;700&family=Pacifico&family=Poppins:wght@200&family=Radio+Canada:wght@300;500&family=Roboto:wght@300&display=swap');
+
+
 *{
     box-sizing: border-box;
     font-family: "Kanit", "sans-serif";
@@ -6,25 +10,60 @@
 
 body{
     place-items: center;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 30px;
 }
 
 .sign-in-section{
-    width: 40em;
-    height: 27em;
+    position: relative;
+    width: 30em;
+    height: 18em;
     margin: auto;
-    border: 2px solid #555;
+    margin-right: 0%;
+    background-color: #F0F8FF;
     padding: 10px 10px 10px 10px;
-    border-radius: 10px;
+}
+
+.SignInContainer{
+    display: flex;
+    margin: auto;
+    width: 60em;
+    box-shadow: 10px 10px 10px #e1e1e3,-15px -15px 27px #ffffff ;
+}
+
+.styleSignIn{
+    position: relative;
+    width: 30em;
+    height: 18em;
+    margin: auto;
+    margin-left: 0;
+    background-color: #8DDFFF;
+}
+
+.styleSignIn > img{
+    position: absolute;
+    left: 200px;
+    top: 20px;
+    width: 200px;
+    height: 200px;
+    transform: translateY(30px);
+    transition: 1s;
+}
+
+.styleSignIn > h3{
+    font-size: 40px;
+    position: relative;
+    font-family: 'Pacifico', cursive;
+    left: 120px;
+    top: 100px;
+    z-index: 1;
+    color: white;
 }
 
 .SubmitBtn{
-    width: 38.5em;
-    border: 2px solid #808080;
+    width: 28.8em;
+    border: 1px solid #808080;
     color: #555;
     background-color: white;
 }
@@ -57,27 +96,34 @@ body{
     position: relative;
 }
 
-.form-control{ 
+
+
+.form-group input{ 
+    min-width: 100%;
     padding: 10px;
-    border: 2px solid #808080;
+    border: 1px solid #808080;
     border-radius: 5px;
     outline: none;
 }
 
 
 .form-group span{
-    padding: 8px;
+    padding: 7px;
     position: absolute;
     padding-left: 13px;
     pointer-events: none;
     font-size: 1em;
     z-index: 1;
-    transition: 0.5s all ease;
+    transition: 0.5s;
     text-transform: uppercase;
 }
 
-.form-control:valid ~span, 
-.form-control:focus~span{
+.form-group input:valid ~ span, 
+.form-group input:focus ~ span{
     color: #555;
     transform: translateX(10px) translateY(-7px);
+    font-size: 0.65em;
+    padding: 0 10px;
 }
+
+

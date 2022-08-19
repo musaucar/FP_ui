@@ -9,14 +9,12 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit&family=PT+Serif:wght@400;700&family=Poppins:wght@200&family=Radio+Canada:wght@300;500&family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <link rel="stylesheet" href="./movieExamp.css">
     <link rel="stylesheet" href="navbar.css">
-    <link rel="stylesheet" href="./sign-in-page.css">
+    <link rel="stylesheet" href="sign-in-page.css">
     <title>Login</title>
   </head>
   <body>
@@ -70,31 +68,40 @@
         </nav>
       </div>
       <!-- navbar end -->
-      
-      
-      <div class="sign-in-section">
-        <form>
-            <div class="form-group">
-                <span class="">Name</span>
-                <input type="email" required="required" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            </div>
-            <div class="form-group">
-                <span class="">Surname</span>
-                <input type="email" required="required" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            </div>
-            <div class="form-group">
-                <span class="">Email address</span>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-              <!-- <small id="emailHelp" required="required" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
-            </div>
-            <div class="form-group">
-                <span class="">Password</span>
-                <input type="password" required="required" class="form-control" id="exampleInputPassword1">
-            </div>
-            <button type="submit" class="btn SubmitBtn ">Sign In</button>
-          </form>
+      <!-- sign in section start -->
+     
+      <div class="SignInContainer">
+        <div class="sign-in-section">
+          <form>
+              <div class="form-group">
+                  <input type="email" required="required" class="form-control" id="inputName">
+                  <span  class="">Name</span>
+                </div>
+              <div class="form-group">
+                  <span >Surname</span>
+                  <input type="email" required="required" class="form-control" id="inputSurname">
+                </div>
+              <div class="form-group">
+                 <span >Email address</span>
+                 <input type="email" required="required" class="form-control" id="inputEmail">
+                <!-- <small id="emailHelp" required="required" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+              </div>
+              <div class="form-group">
+                  <span>Password</span>
+                  <input type="password" required="required" class="form-control" id="inputPassword">
+                </div>
+              <button type="submit" class="btn SubmitBtn ">Sign In</button>
+            </form>
+        </div>
+        <div class="styleSignIn">
+          <h3>FreshPickles</h3>
+          <img src="./photo/pickle.png" alt="">
+        </div>
       </div>
       
+      
+
+       <!-- sign in section start -->
 
 
     <!-- Optional JavaScript; choose one of the two! -->
